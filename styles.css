@@ -204,6 +204,10 @@ footer {
         gap: 30px;
     }
 
+    .steps {
+        background-color: none;
+
+    }
     .sell-steps {
         flex-direction: row;
         justify-content: center;
