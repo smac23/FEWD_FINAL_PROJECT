@@ -1,0 +1,223 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+.topnav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 12px;
+}
+
+.sell-shares-logo {
+    min-height: 50px;
+}
+
+
+.sell-shares-button {
+    background-color: orange;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.search-box {
+    padding: 10px 30px;
+    min-width: 200px;
+}
+
+.nav-container {
+    display: none;
+}
+
+.menus {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 36px;
+    background-color: darkcyan;
+    padding: 20px;
+    color: antiquewhite;
+}
+
+.sell-types {
+    display: none;
+    background-color: navy;
+    list-style: none;
+    position: absolute;
+    padding: 15px 25px;
+    top: 230px;
+}
+
+a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.show {
+    display: block;
+}
+
+.drop-down-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+.type {
+    font-size: 18px;
+    color: gray;
+
+}
+
+.hero-section {
+    display: grid;
+}
+
+.hero-section {
+    position: relative;
+}
+
+.hero-section::before {
+    content: "";
+    background-image: url('./img/download.jpeg');
+    background-size: cover;
+    background-position: center -90px;
+    background-repeat: no-repeat;
+    min-height: 560px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    z-index: -1;
+    filter: brightness(0.3);
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-color: lightgray;
+}
+
+h1 {
+    text-align: center;
+}
+
+.sell-steps {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+    align-items: center;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-container {
+    flex: 1 0;
+}
+
+.chatbot-trigger {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    background-color: antiquewhite;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+}
+
+.chatbot-icon {
+    width: 100%;
+}
+
+.chatbot-popup {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    background-color: coral;
+    height: 250px;
+    padding: 10px;
+}
+
+.btn {
+    margin-top: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+footer {
+    background-color: darkcyan;
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+}
+
+.footer {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+@media (min-width: 600px) {
+    .topnav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .held-by-select {
+        display: none;
+    }
+
+    .nav-container {
+        display: block;
+    }
+
+    .icons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .sell-steps {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .chatbot-trigger {
+        display: block;
+    }
+
+}
